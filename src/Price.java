@@ -1,13 +1,13 @@
-public class Price extends Amenity {
-    int priceId;
+public class Price extends Room {
+    String priceId;
     String currency;
     double totalAmount;
 
-    public int getPriceId() {
+    public String getPriceId() {
         return priceId;
     }
 
-    public void setPriceId(int priceId) {
+    public void setPriceId(String priceId) {
         this.priceId = priceId;
     }
 
