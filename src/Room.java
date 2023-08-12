@@ -1,38 +1,22 @@
-public class Room {
-    int roomId;
+public abstract class Room {
+    String roomId;
     String roomName;
     String roomType;
     int roomCapacity;
 
-    public int getRoomId() {
-        return roomId;
-    }
+    public abstract String getRoomId();
 
-    public void setRoomId(int roomId) {
-        this.roomId = roomId;
-    }
+    public abstract void setRoomId(String roomId) ;
 
-    public String getRoomName() {
-        return roomName;
-    }
+    public abstract String getRoomName() ;
 
-    public void setRoomName(String roomName) {
-        this.roomName = roomName;
-    }
+    public abstract void setRoomName(String roomName);
 
-    public String getRoomType() {
-        return roomType;
-    }
+    public abstract String getRoomType() ;
 
-    public void setRoomType(String roomType) {
-        this.roomType = roomType;
-    }
+    public abstract void setRoomType(String roomType);
 
-    public int getRoomCapacity() {
-        return roomCapacity;
-    }
+    public abstract int getRoomCapacity();
 
-    public void setRoomCapacity(int roomCapacity) {
-        this.roomCapacity = roomCapacity;
-    }
+    public abstract void setRoomCapacity(int roomCapacity);
 }

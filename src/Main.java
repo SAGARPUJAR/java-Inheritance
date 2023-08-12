@@ -4,9 +4,8 @@ public class Main {
    public static ArrayList<Price> empData= new ArrayList();
     private static Scanner sc=new Scanner(System.in);
     public static void main(String[] args) {
-
         Main emp=new Main();
-        System.out.print("Enter the no of records to ve inserted : ");
+        System.out.print("Enter the no of records to be inserted : ");
         int count=sc.nextInt();
         emp.insertRoomDetails(count);
         System.out.println("\n");
@@ -14,35 +13,6 @@ public class Main {
         System.out.println("\n\n Search Data From List By Entering ID : ");
         String Id=sc.next();
         emp.getRoomDetailsById(Id);
-      /*  while(true){
-            System.out.println("Select Option : \n 1. Insert\n2. Update\n 3. Delete\n4. GetDetailsById");
-            int getInput=sc.nextInt();
-            sc.next();
-            switch (getInput){
-                case 1:
-                    System.out.print("Enter the Number of Records to be Inserted : ");
-                    int count=sc.nextInt();
-                    sc.nextLine();
-                    emp.insertRoomDetails(count);
-                    break;
-                case 2:
-//                    System.out.println("Enter the Id of the record to be updated : ");
-//                    int id=sc.nextInt();
-
-                    break;
-                case 3:
-                    System.out.println("Enter the Id to be removed : ");
-                    String id= sc.next();
-                    Price price=  emp.getRoomDetailsById(id);
-                    empData.remove(price);
-                    break;
-                case 4:
-                    break;
-                default:
-                    System.out.println("Invalid Input");
-            }
-        }*/
-
     }
 
     public void insertRoomDetails(int count){
@@ -50,13 +20,13 @@ public class Main {
             Price emp = new Price();
             System.out.println((i + 1) + ". Enter the Room Detail : ");
             System.out.print("Enter The Room Id                     : ");
-            emp.setRoomId(sc.nextLine());
+            emp.setRoomId(sc.next());
 //            emp.roomId = sc.nextInt();
             System.out.print("Enter The Room Name                   : ");
-            emp.setRoomName(sc.nextLine());
+            emp.setRoomName(sc.next());
 //            emp.roomName = sc.nextLine();
             System.out.print("Enter The Room Type                   : ");
-            emp.setRoomType(sc.nextLine());
+            emp.setRoomType(sc.next());
 //            emp.roomType = sc.nextLine();
             System.out.print("Enter The Room Capacity               : ");
             emp.setRoomCapacity(sc.nextInt());
@@ -71,10 +41,10 @@ public class Main {
             emp.amenityDescription = sc.nextLine();*/
             System.out.println("\nEnter the Price Details           : ");
             System.out.print("Enter The Price Id                    : ");
-            emp.setPriceId(sc.nextLine());
+            emp.setPriceId(sc.next());
 //            emp.priceId = sc.nextInt();
             System.out.print("Enter The Currency                    : ");
-            emp.setCurrency(sc.nextLine());
+            emp.setCurrency(sc.next());
 //            emp.currency = sc.nextLine();
             System.out.print("Enter The Total Amount                : ");
             emp.setTotalAmount(sc.nextDouble());
