@@ -1,7 +1,9 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Scanner;
 public class Main {
    public static ArrayList<Price> empData= new ArrayList();
+   HashMap<Integer,Price> data=new HashMap<Integer, Price>();
     private static Scanner sc=new Scanner(System.in);
     public static void main(String[] args) {
         Main emp=new Main();

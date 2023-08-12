@@ -66,4 +66,13 @@ public class Price extends Room {
     public void setRoomCapacity(int roomCapacity) {
         this.roomCapacity=roomCapacity;
     }
+
+    @Override
+    public int hashCode() {
+        return roomId.hashCode();
+    }
+    @Override
+    public boolean equals(Object obj) {
+        return ((Room) obj).roomId ==(roomId);
+    }
 }
